@@ -1,0 +1,30 @@
+.search_container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search_container input[type="text"] {
+    width: 200px;
+    padding: 6px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+  
+  .search_container button[type="submit"]:hover {
+    background-color: #096aa9;
+    
+  }
+  .search_container button[type="submit"] {
+    display: flex;
+    font-size: 12px;
+    padding: 10px;
+    width: 90px;
+    background-color: #102944;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    
+  }

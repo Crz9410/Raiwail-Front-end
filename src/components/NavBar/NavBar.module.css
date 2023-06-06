@@ -1,0 +1,14 @@
+.mainContainer{
+    display: flex;
+    background-color: #102944;
+    height: 30px;
+    justify-content: end;
+    gap: 20px;
+    padding: 10px;
+}
+.mainContainer a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}

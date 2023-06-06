@@ -1,0 +1,22 @@
+.paginado {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  .paginado li {
+    margin-right: 5px;
+  }
+  
+  .paginado a {
+    text-decoration: none;
+    border-bottom: none;
+    color: #102944;
+    font-style: italic;
+  }
+  
+  .paginado a:hover {
+    color: #08b4ff;
+  }
