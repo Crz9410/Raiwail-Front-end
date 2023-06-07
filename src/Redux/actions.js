@@ -1,6 +1,5 @@
 import axios from "axios";
 export const GET_RECIPES = "GET_RECIPES";
-export const GET_COUNTRY = "GET_COUNTRY";
 export const FILTER_BY_STATUS = "FILTER_BY_STATUS";
 export const FILTER_CREATED = "FILTER_CREATED";
 export const ORDER_BY_NAME = "ORDER_BY_NAME";
@@ -22,7 +21,7 @@ export const getRecipes = (offset) => async (dispatch) => {
         }));
         
         
-        const localResponse = await axios.get(`http://localhost:3001/recipe?offset=${offset}`);
+        const localResponse = await axios.get(`https://railwayback-production.up.railway.app/recipe?offset=${offset}`);
         const localRecipes = localResponse.data.map((recipe) => ({
           ...recipe,
           source2: "bdd",
@@ -37,13 +36,7 @@ export const getRecipes = (offset) => async (dispatch) => {
     }
   };
 
-export const getCountry = (id) => {
-    return async function (dispatch) {
-        const apiData = await axios.get(`https://restcountries.com/v3.1/alpha/${id}`);
-        const country = apiData.data;
-        dispatch({ type: GET_COUNTRY, payload: country });
-    }
-}
+
 
 export function orderByName(payload) {
     return {
